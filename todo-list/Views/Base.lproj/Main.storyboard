@@ -39,12 +39,19 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="To-dos" id="v1j-2r-Tsc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hn4-hP-9wP">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="addButtonPress:" destination="5Jh-Uz-hew" id="arG-Kz-gXc"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="cFp-EB-qOT">
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="5Jh-Uz-hew" id="Exs-9A-OTa"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="Hn4-hP-9wP">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="addButtonPress:" destination="5Jh-Uz-hew" id="arG-Kz-gXc"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Caj-fx-HeM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
